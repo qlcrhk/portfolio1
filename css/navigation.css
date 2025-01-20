@@ -4,6 +4,9 @@
     height: 80px;
     border-bottom: 1px solid #000;
     background: #fff;
+    position: fixed;
+    z-index: 999;
+
 }
 
 #gnbList {
@@ -54,14 +57,14 @@
 
 #header h1 a {}
 
-nav#hamburgerMenu {}
 
 /* 모바일 버튼 */
-div.hamburger {
+a.hamburger {
     background: url(../image/mobileBtn.png) no-repeat center / cover;
     width: 36px;
     height: 36px;
     display: none;
+    overflow: hidden;
 }
 
 /* gnb */
@@ -134,7 +137,6 @@ div.hamburger {
     overflow: hidden;
 }
 
-#header nav#lnb ul li:nth-child(3) a {}
 
 
 /* 모바일 */
@@ -143,12 +145,13 @@ div.hamburger {
         display: none;
     }
 
-    div.hamburger {
+    a.hamburger {
         display: block;
         position: absolute;
         right: 20px;
         top: 25px;
         cursor: pointer;
+        text-indent: -120px;
     }
 
     #gnbList {
@@ -156,9 +159,13 @@ div.hamburger {
     }
 
     .mobileClose {
-        /* display: block; */
+        display: none;
         z-index: 999;
         position: fixed;
+    }
+
+    .show{
+        display: block;
     }
 
     #header nav#lnb ul {
@@ -177,15 +184,15 @@ div.hamburger {
     #gnbList {
         position: fixed;
         top: 0;
-        right: -500px;
+        right: -100vw;
         z-index: 100;
-        width: 500px;
+        width: 100vw;
         height: 100vh;
         background: #ffffff;
-        transition: 0.5s right;
-        padding-top: 20px;
-        transition: 0.5s right;
+        padding-top: 100px;
+        transition: 0.5s right;        
     }
+    #gnbList.mobile { right: 0; }
 
     #gnbList a {
         display: block;
@@ -216,6 +223,10 @@ div.hamburger {
         padding: 0;
     }
 
+    .mobileClose.active{
+        display: block;
+    }
+
 }
 
 
@@ -240,32 +251,20 @@ div.hamburger {
         height: 80px;
         line-height: 80px;
         text-align: center;
-        transition: 0.5s;
+        transition: 0.5s height;
     }
+    #gnbList.active { height: 300px; }
 
     #gnbList li ul {
         line-height: 30px;
     }
-
+    .mobileClose.active{
+        display: block;
+    }
 }
 
 /* 데스크탑탑 */
 @media screen and (min-width: 1240px) {
-    #header nav#lnb {}
 
-
-    #header nav#lnb ul li {}
-
-    #header nav#lnb ul li a {
-
-    }
-
-    #header nav#lnb ul li:first-child a {}
-
-    #header nav#lnb ul li:nth-child(1) a {}
-
-    #header nav#lnb ul li:nth-child(2) a {
-        
-    }
 
 }

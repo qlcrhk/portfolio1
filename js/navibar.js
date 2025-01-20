@@ -1,26 +1,27 @@
 const headerWrap = document.getElementById("headerWrap");
-const gnb = document.getElementById("gnb");
+const gnbList = document.getElementById("gnbList");
+const active = document.querySelector('#gnbList.active');
 const gnbMenus = document.querySelectorAll("#gnb > ul > li > a");
+const hamburger = document.querySelector(".hamburger");
+const closeBtn = document.querySelector(".mobileClose");
 
 // 밑줄 동작 변수
 let underlineActive = false;
 
-document.querySelector(".hamburger").addEventListener("click", function(){
-  document.getElementById("gnbList").style.right = 0;
-  document.querySelector(".mobileClose").style.display = "block";
-  console.log("hi");
-});
 
-document.querySelector(".mobileClose").addEventListener("click", function(){
-  document.getElementById("gnbList").style.right = "-500px";
-  document.querySelector(".mobileClose").style.display = "none";
-});
-
-
-document.querySelector("#gnb ul").addEventListener("mouseover",()=>{
-  document.querySelector("#gnbList").style.height = "250px";
+hamburger.addEventListener('click', function () {
+  gnbList.classList.add('mobile');
+  closeBtn.classList.add('show');
+})
+closeBtn.addEventListener('click', function () {
+  gnbList.classList.remove('mobile');
+  closeBtn.classList.remove('show');
 })
 
-document.querySelector("#gnb ul").addEventListener("mouseleave",()=>{
-  document.querySelector("#gnbList").style.height = "80px";
+gnbList.addEventListener('mouseenter', function() {
+  gnbList.classList.add('active');
+
+})
+gnbList.addEventListener('mouseleave', function() {
+  gnbList.classList.remove('active');
 })

@@ -1,235 +1,221 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
-    />
-    <title>팔도</title>
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/navigation.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="./css/slider.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="https://www.paldofood.co.kr/favicon-16x16.png"
-    />
 
-    <script src="./js/navibar.js" defer></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <title>팔도</title>
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/navigation.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/slider.css" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://www.paldofood.co.kr/favicon-16x16.png" />
 
-  </head>
-  <body>
-    <header id="header">
-      <h1>
-        <a href="#">팔도식품</a>
-      </h1>
-      <nav id="hambugerMenu">
-        <h2 class="hidden">모바일 버전 메뉴</h2>
-        <div class="hamburger"></div>
-      </nav>
-      <nav id="lnb">
-        <h2 class="hidden">검색/숍/영문 사이트 전환</h2>
-        <ul>
-          <li><a href="#" class="search">검색</a></li>
-          <li><a href="#" class="shop">shop</a></li>
-          <li><a href="#" class="eng">eng</a></li>
-        </ul>
-      </nav>
-      <nav id="gnb">
-        <div id="horizontalUnderline"></div>
-        <a href="#" class="mobileClose">뒤로가기</a>
-        <h2 class="hidden">메인메뉴</h2>
-        <ul id="gnbList">
-          <li>
-            <a href="#">소개</a>
-            <ul>
-              <li><a href="#">기업소개</a></li>
-              <li><a href="#">연혁</a></li>
-              <li><a href="#">공고</a></li>
-              <li><a href="#">CI</a></li>
-              <li><a href="#">인재채용</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">제품</a>
-            <ul>
-              <li><a href="#">면</a></li>
-              <li><a href="#">음료</a></li>
-              <li><a href="#">간편식</a></li>
-              <li><a href="#">스낵</a></li>
-              <li><a href="#">해외브랜드</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">자료실</a>
-            <ul>
-              <li><a href="#">뉴스</a></li>
-              <li><a href="#">사회공헌</a></li>
-              <li><a href="#">제품 자료실</a></li>
-              <li><a href="#">CF</a></li>
-              <li><a href="#">이벤트</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">문의</a>
-            <ul>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">고객의 소리</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
+  <script src="./js/navibar.js" defer></script>
 
-    <section class="visualMain">
-      <h2 class="hidden">팔도 상단 영상</h2>
-      <iframe
-        src="https://www.youtube-nocookie.com/embed/J9hdEuj2LiM?controls=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=J9hdEuj2LiM"
-        title="YouTube video player"
-        frameborder="0"
-        allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-        style="z-index: -1"
-      >
-      </iframe>
+</head>
+
+<body>
+  <header id="header">
+    <h1>
+      <a href="#">팔도식품</a>
+    </h1>
+
+      <a class="hamburger"><span class="hidden">모바일 버전 메뉴</span></a>
+    <nav id="lnb">
+      <h2 class="hidden">검색/숍/영문 사이트 전환</h2>
+      <ul>
+        <li><a href="#" class="search">검색</a></li>
+        <li><a href="#" class="shop">shop</a></li>
+        <li><a href="#" class="eng">eng</a></li>
+      </ul>
+    </nav>
+    <nav id="gnb">
+      <div id="horizontalUnderline"></div>
+      <a href="#" class="mobileClose">뒤로가기</a>
+      <h2 class="hidden">메인메뉴</h2>
+      <ul id="gnbList">
+        <li>
+          <a href="#">소개</a>
+          <ul>
+            <li><a href="#">기업소개</a></li>
+            <li><a href="#">연혁</a></li>
+            <li><a href="#">공고</a></li>
+            <li><a href="#">CI</a></li>
+            <li><a href="#">인재채용</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">제품</a>
+          <ul>
+            <li><a href="#">면</a></li>
+            <li><a href="#">음료</a></li>
+            <li><a href="#">간편식</a></li>
+            <li><a href="#">스낵</a></li>
+            <li><a href="#">해외브랜드</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">자료실</a>
+          <ul>
+            <li><a href="#">뉴스</a></li>
+            <li><a href="#">사회공헌</a></li>
+            <li><a href="#">제품 자료실</a></li>
+            <li><a href="#">CF</a></li>
+            <li><a href="#">이벤트</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">문의</a>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">고객의 소리</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="visualMain">
+    <h2 class="hidden">팔도 상단 영상</h2>
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/J9hdEuj2LiM?controls=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=J9hdEuj2LiM"
+      title="YouTube video player" frameborder="0"
+      allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="z-index: -1">
+    </iframe>
+  </section>
+
+  <main>
+    <!-- 팝업창으로 띄워보기 -->
+
+    <section class="product">
+      <h2>팔도의 다양한 맛</h2>
+      <p>색다른 맛의 즐거움, 궁금함을 참을 수 있겠어?</p>
+      <div class="productWrap">
+        <article>
+          <a href="#">
+            <h3>대한민국 라면의 대명사<br /><span>팔도라면</span></h3>
+            <div class="image-box">
+              <img src="./image/라면묶음.png" alt="./팔도 라면들의 모습" />
+            </div>
+            <a href="#" class="mainMore">더 알아보기</a>
+          </a>
+        </article>
+        <article>
+          <a href="#">
+            <h3>더할수록 즐거워지는 맛<br /><span>팔도소스</span></h3>
+
+            <div class="image-box">
+              <img src="./image/소스묶음.png" alt="./팔도 라면들의 모습" />
+            </div>
+            <a href="#" class="mainMore">더 알아보기</a>
+          </a>
+        </article>
+        <article>
+          <a href="#">
+            <h3>다양하고 마시는 즐거움<br /><span>팔도음료</span></h3>
+
+            <div class="image-box">
+              <img src="./image/음료.png" alt="./팔도 라면들의 모습" />
+            </div>
+            <a href="#" class="mainMore">더 알아보기</a>
+          </a>
+        </article>
+      </div>
     </section>
+  </main>
+
+  <div class="company-section-wrapper">
+    <div class="aside-box">
+      <div class="aside-text">
+        <span>paldo</span>
+        <span>paldo</span>
+        <span>paldo</span>
+      </div>
+    </div>
+    <div class="aside-box aside2">
+      <div class="aside-text">
+        <span>paldo</span>
+        <span>paldo</span>
+        <span>paldo</span>
+      </div>
+    </div>
 
     <main>
-      <!-- 팝업창으로 띄워보기 -->
+      <section class="companyIntro">
+        <h2>회사 소개</h2>
+        <p>지금까지의 기업의 역사, 따듯한 기업 팔도</p>
 
-      <section class="product">
-        <h2>팔도의 다양한 맛</h2>
-        <p>색다른 맛의 즐거움, 궁금함을 참을 수 있겠어?</p>
-        <div class="productWrap">
+        <div class="companyIntroWrapper">
           <article>
-            <a href="#">
-              <h3>대한민국 라면의 대명사<br /><span>팔도라면</span></h3>
-              <div class="image-box">
-                <img src="./image/라면묶음.png" alt="./팔도 라면들의 모습" />
-              </div>
-              <a href="#" class="mainMore">더 알아보기</a>
-            </a>
+            <div class="company-text-wrap" style="flex-grow: 1">
+              <h3>기업 이념</h3>
+              <p>건강한 사회,더불어 살아가는 따뜻한 사회를 만들자</p>
+              <a href="#">더 알아보기</a>
+            </div>
+
+            <div class="company-img company-img1" style="flex-grow: 2"></div>
           </article>
           <article>
-            <a href="#">
-              <h3>더할수록 즐거워지는 맛<br /><span>팔도소스</span></h3>
+            <div class="company-text-wrap" style="flex-grow: 1; order: 2">
+              <h3>사업분야</h3>
+              <p>믿고 먹을 수 있는 식품부터 해외 수출까지</p>
+              <a href="#">더 알아보기</a>
+            </div>
 
-              <div class="image-box">
-                <img src="./image/소스묶음.png" alt="./팔도 라면들의 모습" />
-              </div>
-              <a href="#" class="mainMore">더 알아보기</a>
-            </a>
+            <div class="company-img company-img2" style="flex-grow: 2"></div>
           </article>
           <article>
-            <a href="#">
-              <h3>다양하고 마시는 즐거움<br /><span>팔도음료</span></h3>
-
-              <div class="image-box">
-                <img src="./image/음료.png" alt="./팔도 라면들의 모습" />
-              </div>
-              <a href="#" class="mainMore">더 알아보기</a>
-            </a>
+            <div class="company-text-wrap" style="flex-grow: 1">
+              <h3>연혁</h3>
+              <p>1983년부터 시작된 팔도의 발자취를 따라가보세요</p>
+              <a href="#">더 알아보기</a>
+            </div>
+            <div class="company-img company-img3" style="flex-grow: 2"></div>
           </article>
         </div>
       </section>
     </main>
+  </div>
 
-    <div class="company-section-wrapper">
-      <div class="aside-box">
-        <div class="aside-text">
-          <span>paldo</span>
-          <span>paldo</span>
-          <span>paldo</span>
-        </div>
-      </div>
-      <div class="aside-box aside2">
-        <div class="aside-text">
-          <span>paldo</span>
-          <span>paldo</span>
-          <span>paldo</span>
-        </div>
-      </div>
-
-      <main>
-        <section class="companyIntro">
-          <h2>회사 소개</h2>
-          <p>지금까지의 기업의 역사, 따듯한 기업 팔도</p>
-
-          <div class="companyIntroWrapper">
-            <article>
-              <div class="company-text-wrap" style="flex-grow: 1">
-                <h3>기업 이념</h3>
-                <p>건강한 사회,더불어 살아가는 따뜻한 사회를 만들자</p>
-                <a href="#">더 알아보기</a>
-              </div>
-
-              <div class="company-img company-img1" style="flex-grow: 2"></div>
-            </article>
-            <article>
-              <div class="company-text-wrap" style="flex-grow: 1; order: 2">
-                <h3>사업분야</h3>
-                <p>믿고 먹을 수 있는 식품부터 해외 수출까지</p>
-                <a href="#">더 알아보기</a>
-              </div>
-
-              <div class="company-img company-img2" style="flex-grow: 2"></div>
-            </article>
-            <article>
-              <div class="company-text-wrap" style="flex-grow: 1">
-                <h3>연혁</h3>
-                <p>1983년부터 시작된 팔도의 발자취를 따라가보세요</p>
-                <a href="#">더 알아보기</a>
-              </div>
-              <div class="company-img company-img3" style="flex-grow: 2"></div>
-            </article>
-          </div>
-        </section>
-      </main>
+  <section class="map-contianer">
+    <div class="map-text">
+      <h2>오시는 길</h2>
+      <p>지도로 회사의 위치를 한눈에 확인하세요</p>
+    </div>
+    <div style="width: 1240px; height: 400px; margin: 20px auto">
+      <div id="map" style="width: 100%; height: 100%"></div>
     </div>
 
-    <section class="map-contianer">
-      <div class="map-text">
-        <h2>오시는 길</h2>
-        <p>지도로 회사의 위치를 한눈에 확인하세요</p>
-      </div>
-      <div style="width: 1240px; height: 400px; margin: 20px auto">
-        <div id="map" style="width: 100%; height: 100%"></div>
-      </div>
+    <!-- <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2a96e8c7f34118ee8663f576a32bc302"></script>
+    <script defer></script> -->
+  </section>
 
-      <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2a96e8c7f34118ee8663f576a32bc302"></script>
-      <script defer></script>
-    </section>
-
-    <footer>
-      <div id="footer-wrap">
-        <div class="info">
-          <address>
-            <span>대구광역시 XX구 XX길 XXXXXXX / 대표 : OOO</span><br />
-            <span>사업자등록번호 : ㅁㅁㅁ-ㅁㅁ-ㅁㅁㅁㅁㅁ</span><br />
-            <span>전화 : XXX-XXXXX / 팩스 : XXXX-XXXX</span><br />
-            <span>e-mail: eee@eeee.co.kr</span>
-          </address>
-          <small>copyright &copy;팔도를 활용한 포트폴리오</small>
-        </div>
-        <div class="sns">
-          <ul>
-            <li><a href="#" class="facebook">페이스북</a></li>
-            <li><a href="#" class="naver">네이버</a></li>
-            <li><a href="#" class="youtube">유튜브</a></li>
-            <li><a href="#" class="insta">인스타그램</a></li>
-            <li><a href="#" class="tweeter">트위터</a></li>
-          </ul>
-        </div>
+  <footer>
+    <div id="footer-wrap">
+      <div class="info">
+        <address>
+          <span>대구광역시 XX구 XX길 XXXXXXX / 대표 : OOO</span><br />
+          <span>사업자등록번호 : ㅁㅁㅁ-ㅁㅁ-ㅁㅁㅁㅁㅁ</span><br />
+          <span>전화 : XXX-XXXXX / 팩스 : XXXX-XXXX</span><br />
+          <span>e-mail: eee@eeee.co.kr</span>
+        </address>
+        <small>copyright &copy;팔도를 활용한 포트폴리오</small>
       </div>
-    </footer>
-    <script src="./js/main.js"></script>
-  </body>
+      <div class="sns">
+        <ul>
+          <li><a href="#" class="facebook">페이스북</a></li>
+          <li><a href="#" class="naver">네이버</a></li>
+          <li><a href="#" class="youtube">유튜브</a></li>
+          <li><a href="#" class="insta">인스타그램</a></li>
+          <li><a href="#" class="tweeter">트위터</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>
