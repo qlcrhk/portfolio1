@@ -1,0 +1,271 @@
+/* 헤더 */
+#header {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #000;
+    background: #fff;
+}
+
+#gnbList {
+    overflow: hidden;
+    width: 100%;
+    height: 75px;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    background: #fff;
+
+}
+
+#header h1 {
+    position: absolute;
+    z-index: 99;
+    top: 15px;
+    left: 50px;
+    margin-top: -5px;
+}
+
+#header h1 a {
+    color: #000;
+}
+
+.mobileBtn {
+    display: none;
+}
+
+.mobileClose {
+    display: none;
+    width: 36px;
+    height: 36px;
+    background: url(../image/mobileClose.png) no-repeat center center / cover;
+    text-indent: -100px;
+    overflow: hidden;
+
+}
+
+#header h1 {
+    background: url(../image/ci.png) no-repeat center / cover;
+    width: 135px;
+    height: 62px;
+    text-indent: -200px;
+    overflow: hidden;
+}
+
+#header h1 a {}
+
+nav#hamburgerMenu {}
+
+/* 모바일 버튼 */
+div.hamburger {
+    background: url(../image/mobileBtn.png) no-repeat center / cover;
+    width: 36px;
+    height: 36px;
+    display: none;
+}
+
+/* gnb */
+
+#header nav#gnb {}
+
+#header nav#gnb #horizontalUnderline {
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    width: 0;
+    height: 2px;
+    background-color: #d30909;
+    transition: all 0.5s;
+}
+
+#header nav#gnb ul {}
+
+#header nav#gnb ul li {}
+
+#header nav#gnb ul li a {
+    transition: 0.3s;
+}
+
+#header nav#gnb ul li a:hover {
+    color: #d30909;
+}
+
+#header nav#gnb ul li ul {}
+
+#header nav#gnb ul li ul li {}
+
+#header nav#gnb ul li ul li a {}
+
+#header nav#gnb ul li ul li a:hover {
+    color: #d30909;
+}
+
+/* lnb */
+
+#header nav#lnb {
+    order: 2;
+}
+
+#header nav#lnb ul {
+    display: flex;
+    position: absolute;
+    gap: 10px;
+    right: 20px;
+}
+
+#header nav#lnb ul li {
+    display: flex;
+}
+
+#header nav#lnb ul li a {
+    display: flex;
+    width: 24px;
+}
+
+#header nav#lnb ul li:first-child a {
+    background: url(../image/search.svg) center center / cover;
+    text-indent: -100px;
+    overflow: hidden;
+}
+
+#header nav#lnb ul li:nth-child(2) a {
+    background: url(../image/storefront.svg) center center / cover;
+    text-indent: -100px;
+    overflow: hidden;
+}
+
+#header nav#lnb ul li:nth-child(3) a {}
+
+
+/* 모바일 */
+@media screen and (max-width: 800px) {
+    #header nav#lnb {
+        display: none;
+    }
+
+    div.hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        cursor: pointer;
+    }
+
+    #gnbList {
+        display: block;
+    }
+
+    .mobileClose {
+        /* display: block; */
+        z-index: 999;
+        position: fixed;
+    }
+
+    #header nav#lnb ul {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        z-index: 999;
+    }
+
+    #header nav#lnb ul li {}
+
+    #header nav#lnb ul li a {}
+
+    #gnbList {
+        position: fixed;
+        top: 0;
+        right: -500px;
+        z-index: 100;
+        width: 500px;
+        height: 100vh;
+        background: #ffffff;
+        transition: 0.5s right;
+        padding-top: 20px;
+        transition: 0.5s right;
+    }
+
+    #gnbList a {
+        display: block;
+        font-size: 1.5em;
+        width: 100%;
+    }
+
+    #gnbList ul li a {
+        display: block;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    #gnb {
+        display: flex;
+    }
+
+    #gnbList li {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #000;
+        padding: 30px;
+    }
+
+    #gnbList li ul li {
+        border-bottom: none;
+        width: 200px;
+        padding: 0;
+    }
+
+}
+
+
+
+/* 테블릿 */
+@media screen and (min-width: 801px) {
+    #header nav#lnb ul {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        z-index: 999;
+        margin-right: 30px;
+    }
+
+
+
+    #gnbList{
+        position: absolute;
+        width: 100%;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        transition: 0.5s;
+    }
+
+    #gnbList li ul {
+        line-height: 30px;
+    }
+
+}
+
+/* 데스크탑탑 */
+@media screen and (min-width: 1240px) {
+    #header nav#lnb {}
+
+
+    #header nav#lnb ul li {}
+
+    #header nav#lnb ul li a {
+
+    }
+
+    #header nav#lnb ul li:first-child a {}
+
+    #header nav#lnb ul li:nth-child(1) a {}
+
+    #header nav#lnb ul li:nth-child(2) a {
+        
+    }
+
+}

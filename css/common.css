@@ -1,0 +1,336 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 기본 설정 */
+* {
+    box-sizing: border-box;
+    font-family: 'pretend-regular',sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.hidden {
+    width: 1px;
+    height: 1px;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+/* Header 영역 */
+
+
+
+
+/* 비주얼 섹션 */
+.visualMain {
+    width: 100vw;
+    height: calc(100vw * 9 / 16);
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.visualMain iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Main 섹션 */
+main {
+    padding: 2em 1em;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+main section {
+    width: 100%;
+    padding-bottom: 2em;
+}
+
+main h2 {
+    /* margin-bottom: 1em; */
+    margin-top: 1.3em;
+    font-size: 2em;
+    /* line-height: 0.5em; */
+}
+
+
+main p {
+    font-size: 1.5em;
+    padding-top:0.5em;
+    padding-bottom: 2em;
+}
+
+
+/* 상품 영역 */
+.productWrap {
+    display: flex;
+}
+
+
+.product article {
+    position: relative;
+    width: 30%;
+    border: 1px solid #8d8d8d;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.product article a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 25%;
+}
+
+.product article .image-box {
+    width: 95%;
+    height: 100%;
+    /* border: 1px solid black; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.product article a:hover .image-box {
+    transform: scale(1.07);
+}
+
+.product article .mainMore {
+    height: 50px;
+    transition: all 0.3s;
+    padding: 1em 0.5em;
+    cursor: pointer;
+}
+.product article:hover{
+    transition: 0.3s;
+    background: #f1f1f1;
+}
+
+.product article:hover .mainMore{
+    background: #b00707;
+    color: white;
+}
+
+.product article h3 {
+    padding-top: 1em;
+}
+
+.product article h3 span {
+    color: #d30909;
+}
+
+
+
+.product article .image-box img {
+    width: 80%;
+}
+
+
+.product article .mainMore {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    bottom: -25px;
+    right: 0;
+    width: 110px;
+    font-size: 1em;
+    background-color: #d30909;
+    color: white;
+    transition: all 0.3s;
+}
+
+/* Footer 영역 */
+footer {
+    background: #f5f5f5;
+    padding: 2em 1em;
+}
+
+#footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+
+footer .sns ul {
+    gap: 1em;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+footer .sns ul li {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+footer .sns ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: #555;
+    transition: color 0.3s;
+    background: url(../image/ico-sp-sns.png) no-repeat;
+    background-position: left;
+    background-size: 315px 40px;
+    text-indent: -110px;
+}
+
+footer .sns ul li a.facebook {
+    background-position: -40px 0;
+}
+
+footer .sns ul li a.tweeter {
+    background-position: 0 0;
+}
+
+footer .sns ul li a.naver {
+    background-position: -78px 0;
+}
+
+footer .sns ul li a.insta {
+    background-position: -195px 0;
+}
+
+footer .sns ul li a.youtube {
+    background-position: -236px 0;
+
+}
+
+footer .info {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.8em;
+}
+
+footer address {
+    margin-bottom: 1em;
+    font-style: normal;
+}
+
+footer small {
+    display: block;
+    font-size: 1em;
+    margin-top: 1em;
+    color: #aaa;
+}
+
+@media screen and (max-width: 1440px) {
+
+    main{
+        width: 90%;
+    }
+
+
+    #footer-wrap {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    footer .sns {
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    footer .info {
+        order: 2;
+    }
+
+}
+
+
+@media screen and (max-width: 1240px) {
+
+    h2 {
+        /* margin-bottom: 1em; */
+        font-size: 24px;
+        line-height: 0.5em;
+    }
+    h3{
+        padding-top: 20px;
+    }
+
+    main p {
+        font-size: 16px;
+        padding-top: 15px;
+        padding-bottom: 1em;
+    }
+
+    .productWrap {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .product article {
+        width: 50%;
+        /* 화면이 좁아지면 상품의 너비가 45%로 변경 */
+        margin: 1.5em auto;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .product article {
+        width: 100%;
+        /* 작은 화면에서는 상품 영역을 세로로 쌓음 */
+    }
+
+    .aside-box {
+        display: none;
+    }
+    .product article .mainMore {
+        width: 100%;;
+    }
+}

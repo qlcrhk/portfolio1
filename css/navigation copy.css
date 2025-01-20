@@ -1,0 +1,150 @@
+/* navigation start */
+/* gnb bar */
+#headerWrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    transition: all 0.3s;
+    background: #fff;
+    z-index: 999;
+    border-bottom: 1px solid #0003;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+header h1 {
+    margin: 10px 0 0 50px;
+
+}
+
+header h1 a {
+    display: block;
+    background: url(../image/ci.png) no-repeat center / cover;
+    width: 100px;
+    height: 30px;
+    text-indent: -125px;
+    overflow: hidden;
+}
+
+#gnb {
+    overflow: hidden;
+}
+
+#gnb > ul{
+    display: flex;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.2em;
+    gap: 30px;
+}
+
+#gnb > ul > li{
+    padding: 10px;
+}
+
+
+#gnb > ul > li > a{
+    display: block;
+}
+
+#gnb ul li ul li a{
+    display: block;
+    font-size: 0.7em;
+    transition: all 0.3s;
+    padding: 0.2em;
+}
+#gnb > ul > li > ul > li:first-child a{
+    padding-top: 20px;
+}
+
+#gnb ul li ul li a:hover{
+    color: #d30909;
+}
+
+#horizontalUnderline{
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    width: 0;
+    height: 2px;
+    background-color: #d30909;
+    transition: all 0.5s;
+}
+/* lnb bar */
+#lnb{
+    order: 2;
+}
+
+#lnb ul{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding:10px;
+    gap: 0.5em;
+}
+
+#lnb ul li a.search{
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: url(../image/search.svg) no-repeat center / cover;
+    overflow: hidden;
+    text-indent: -100px;
+}
+
+#lnb ul li a.shop{
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: url(../image/storefront.svg) no-repeat center / cover;
+    overflow: hidden;
+    text-indent: -100px;
+}
+#lnb ul li a.eng{
+    display: block;
+    width: 24px;
+    height: 24px;
+    font-size: 18px;
+}
+#hambuger{
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#hambuger span{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #000000;
+    margin: 5px 0;
+}
+@media screen and (max-width: 1240px) {
+    #hambuger{
+        display: block;
+    }
+    header{
+        flex-direction: column;
+    }
+
+    #gnb ul{
+        flex-direction: column;
+    }
+
+    #lnb ul{
+        flex-direction: column;
+    }
+}

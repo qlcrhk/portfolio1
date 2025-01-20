@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&family=Train+One&display=swap');
+
+.train-one-regular {
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* 회사정보 */
+
+
+.companyIntro .companyIntroWrapper article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+    /* 서서히 나타나는 효과 */
+}
+
+.companyIntro .companyIntroWrapper article div {
+    width: 50%;
+}
+
+.companyIntroWrapper article.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.company-text-wrap {
+    text-align: start;
+}
+
+.company-text-wrap h3 {
+    font-size: 1.5em;
+}
+
+.company-text-wrap p{
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0.5em 0 2em;
+}
+
+.company-text-wrap a {
+    font-size: 1em;
+    padding: 1em 2em;
+    background-color: #d30909;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.company-text-wrap a:hover {
+    background-color: #b00707;
+    transition: all 0.3s ease-in-out;
+}
+
+.companyIntroWrapper article:nth-child(2) .company-text-wrap {
+    text-align: end;
+}
+
+
+.companyIntro .companyIntroWrapper article div.company-img {
+    width: 50%;
+    height: 400px;
+    background: no-repeat center / cover;
+    
+}
+
+.companyIntro .companyIntroWrapper article div.company-img1{
+    background-image: url(../image/test.jpg);
+}
+.companyIntro .companyIntroWrapper article div.company-img2{
+    background-image: url(../image/container.jpg);
+}
+.companyIntro .companyIntroWrapper article div.company-img3{
+    background-image: url(../image/facility02.jpg);
+}
+.aside-box {
+    width: 15vw;
+    overflow: hidden;
+}
+
+.company-section-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.aside-text {
+    display: flex;
+    gap: 1em;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    font-size: 10em;
+}
+
+.aside-box div span {
+    font-family: 'Train One', sans-serif;
+    color: rgba(198, 198, 198, 0.425);
+    transition: all 0.2s;
+    transform: translateX(300%);
+
+}
+
+.aside2 {
+    order: 2;
+    transform: rotate(180deg);
+}
+
+/* map */
+
+.map-text{
+    font-size: 1.5em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 1240px) {
+    .companyIntro .companyIntroWrapper article {
+        flex-direction: column;
+        align-items: center;
+        margin: 1em 0;
+        width: 100%;
+    }
+    
+    .company-text-wrap h3 {
+        font-size: 18px;
+    }
+
+    .company-text-wrap p {
+        font-size: 14px;
+    }
+
+    .companyIntro .companyIntroWrapper article div.company-img {
+        width: 90%;   
+    }
+
+    .companyIntroWrapper article:nth-child(1) .company-text-wrap{
+        width: 90%;
+    }
+
+    .companyIntroWrapper article:nth-child(2) .company-text-wrap {
+        text-align: start;
+        width: 90%;
+
+    }
+    .companyIntroWrapper article:nth-child(3) .company-text-wrap{
+        width: 90%;
+    }
+    
+    .companyIntro .companyIntroWrapper article div:first-child {
+        order: 2;
+    }
+
+    .company-text-wrap a {
+        font-size: 13px;
+        padding: 0.5em 1em;
+    }
+
+    .company-text-wrap {
+        padding-bottom: 0.5em;
+    }
+
+    .map-text p{
+        font-size: 14px;
+        padding-top: 10px;
+    }
+}
